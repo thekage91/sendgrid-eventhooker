@@ -4,7 +4,7 @@ var Event = require('mongoose').models.Event;
 var api = {}
 
 api.getAllByUser = function(req, res){
-	var user = req.user;
+	var user = req.query.user;
 
 	Event
 	.find({
@@ -19,14 +19,14 @@ api.getAllByUser = function(req, res){
 	});
 }
 
-api.getEvent = function(req, res){
-	var user = req.user;
+api.getEventsBySpedition = function(req, res){
+	var user = req.query.user;
 	var speditionId = req.params.id;
 
 	Event
 	.find({
-		user_id: user,
-		spedition_id: speditionId
+		user_id: '59b14ad9e0515410a5b460d1' || user,
+		spedition_id: '5a69d7244aa7ff03b385e3cd' || speditionId
 	})
 	.exec(function(err, events){
 		if (err) {
@@ -38,7 +38,7 @@ api.getEvent = function(req, res){
 }
 
 router.get('/events', api.getAllByUser);
-router.get('/event/spedition/:id', api.getEvent);
+router.get('/event/spedition/:id', api.getEventsBySpedition);
 
 module.exports = router;
 
