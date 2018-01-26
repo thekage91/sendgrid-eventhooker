@@ -3,8 +3,8 @@ var mongoose = require('mongoose'),
 
 var fields = {
 	ip: { type: String },
-	sg_event_id: { type: String, unique: true },
-	sg_message_id: { type: String, unique: true },
+	sg_event_id: { type: String },
+	sg_message_id: { type: String },
 	useragent: { type: String },
 	event: { type: String },
 	email: { type: String },

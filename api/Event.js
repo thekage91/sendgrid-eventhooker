@@ -25,8 +25,8 @@ api.getEventsBySpedition = function(req, res){
 
 	Event
 	.find({
-		user_id: '59b14ad9e0515410a5b460d1' || user,
-		spedition_id: '5a69d7244aa7ff03b385e3cd' || speditionId
+		//user_id: '59b14ad9e0515410a5b460d1' || user,
+		//spedition_id: '5a69d7244aa7ff03b385e3cd' || speditionId
 	})
 	.exec(function(err, events){
 		if (err) {

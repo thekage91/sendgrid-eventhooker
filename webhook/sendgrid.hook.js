@@ -11,7 +11,6 @@ hook.emailEventsHook = function(req, res, next){
 		var newEvent = new Event(emailEvent);
 
 		newEvent.save(done);
-
 	}, function(err){
 		if (err) {
 			return res.status(400).send(err);
