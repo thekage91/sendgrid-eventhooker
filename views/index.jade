@@ -1,5 +1,23 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div.container
+		div.row
+			div.col-md-12
+				h1 Welcome
+		div.row
+			div.col-md-12
+				div.table-responsive
+					table.table.table-striped
+						thead
+							tr
+								th Sender email
+								th Total email sended
+								th #
+						tbody
+							for event in events
+								tr
+									td #{ event._id }
+									td #{ event.count }
+									td 
+										a(class='btn.btn-default' href='#') Info

@@ -1,0 +1,489 @@
+.center-item{
+
+}
+
+.hidden{
+	display: none;
+}
+
+.feedback,
+.feedback:hover,
+.feedback-composer .title,
+.feedbacl-composer .final-mex{
+	font-family: 'Permanent Marker', cursive;
+}
+
+.feedback,
+.feedback:hover	{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 22px;
+	color: rgb(45, 64, 89);
+	background: #ffd35f;
+	border: 2px solid #ffc107;
+	border-top-left-radius: 4px;
+	width: 300px;
+	height: 50px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	cursor: pointer;
+	padding-left: 55px;
+	padding-top: 5px;
+}
+
+.feedback-composer{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+
+	margin-bottom: 60px;
+	width: 400px;
+	height: 600px;
+	color: rgb(45, 64, 89);
+	background: #ffd35f;
+	border: 2px solid #ffc107;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.feedback-composer .btn{
+}
+
+.feedback-composer p{
+	margin-bottom: 0px;
+}
+
+.feedback-composer .div-form{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback-composer textarea{
+	width: 350px;
+	height: 200px;
+	color: rgb(45, 64, 89);
+	//background: #ffecb9;
+	//border: 2px solid #ffc107;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.feedback-composer .btn{
+	cursor: pointer;
+	color: white !important;
+}
+
+
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/template-overviews/4-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-4-col-portfolio/blob/master/LICENSE)
+ */
+
+.absolute-center {
+	/* Internet Explorer 10 */
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	-ms-flex-align:center;
+
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+
+	/* Safari, Opera, and Chrome */
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+
+	/* W3C */
+	display:box;
+	box-pack:center;
+	box-align:center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+body {
+    height: 100vh;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.footer-2{
+	position: fixed;
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 300px;
+}
+
+.nav-link{
+	font-size: 25px;
+}
+
+.section-title,
+.marker,
+.nav-link{
+	font-family: 'Permanent Marker', cursive;
+	margin-bottom: 0px;
+}
+
+.section-title,
+.nav-link{
+	color: rgb(45, 64, 89);
+	margin-bottom: 30px;
+}
+
+.section-title:after,
+.lead-signup:after,
+.nav-link:after{
+    color: #ffd35f;
+}
+.section-title:after,
+.lead-signup:after,
+.nav-link:after {
+    font-size: 1.5em;
+    content: '\005F';
+    display: block;
+    line-height: 0;
+    margin-top: -0.1em;
+}
+
+.lead-signup:after{
+	margin-bottom: 0.8em;
+}
+
+.marker{
+	color: #ffd35f;
+	font-size: 50px;
+	display: block;
+	margin-top: -40px;
+	margin-bottom: 10px;
+	font-stretch: expanded;
+}
+
+.jumbotron,
+.jumbotron a{
+	padding-top: 0px;
+	background-color: transparent;
+	color: rgb(45, 64, 89) !important;
+	text-decoration: none;
+}
+
+.jumbotron .display-text-3,
+.jumbotron .title,
+.jumbotron .lead,
+.jumbotron .lead-signup,
+.jumbotron form{
+	font-family: 'Permanent Marker', cursive;
+}
+
+.jumbotron .lead{
+	font-size: 25px;	
+}
+
+.jumbotron form .input-group .btn{
+	background-color: #ffd35f;
+	border-color: #ffd35f;
+	color: rgb(45, 64, 89);
+	font-weight: 700; 
+}
+
+.jumbotron form .input-group input:focus{
+	border-color: #ffd35f;
+	border-right: none;
+	font-weight: 100;
+	font-family: "Segoe UI";
+}
+
+/*
+.lead:after {
+    color: #ffd35f;
+}
+.lead:after {
+    font-size: 1.5em;
+    content: '\005F';
+    font-family: 'fontello';
+    display: block;
+    line-height: 0;
+    margin-top: 0.44em;
+}
+*/
+.navbar{
+	margin-bottom: 30px !important;
+}
+
+.page-header{
+	margin-top: 40px;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.pagination {
+    margin-bottom: 30px;
+}
+
+.item{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.item .card{
+	color: #ffd35f !important;
+	background: rgb(45, 64, 89);
+}
+
+.item:hover{
+	text-decoration: none;
+}
+
+.item:hover .card{
+	box-shadow: 0px 0px 15px orange;
+}
+
+.item-add-spot:hover .card{
+	box-shadow: 0px 0px 15px rgb(45, 64, 89);
+}
+
+.item-add-spot .card-img-top,
+.btn-warning{
+	background: #ffd35f;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.item-add-spot .title,
+.item-add-spot .sub-title,
+.btn-warning{
+	color: rgb(45, 64, 89);
+	background: #ffd35f;
+}
+
+.item-add-spot .title{
+	font-size: 80px;
+}
+.item-add-spot .sub-title{
+	font-size: 30px !important;
+}
+
+.btn-warning{
+	font-size: 30px;
+}
+
+.card{
+	border-radius: 5px !important;
+	border: none;
+}
+
+.card-img-top{
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	display:flex;
+	align-items: center; /* Vertical center alignment */
+	justify-content: center; /* Horizontal center alignment */
+	color: white;
+}
+
+.card-img-top div{
+	width: 100%;
+	text-align: center;
+}
+
+.card-img-top .title,
+.card-img-top .sub-title	{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.card-img-top .sub-title{
+	font-weight: 100px !important;
+	font-size: 20px;
+}
+
+.card-body{
+	text-align: center;
+}
+
+.img-partner{
+	width: 100%;
+}
+
+/* Animation */
+@keyframes fadeInOnScroll {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.4;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.onScroll{
+	pointer-events: none;
+	animation-name: fadeInOnScroll;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+.spiaggetta{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/spiaggetta.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.carrubo{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/carrubo.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.furteventura{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/fuerteventura.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.vindicio{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/vindicio.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.tre-ponti-livorno{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/tre-ponti-livorno.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.sabaudia{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/sabaudia.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.livorno{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/livorno.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.castiglioncello{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/castiglioncello.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.lillatro{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/lillatro\ copia.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.cala-della-morte{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/cala-della-morte.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.bufalara{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/bufalara.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.saporetti{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/saporetti.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.salto-di-fondi{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/salto-di-fondi.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.campo-di-mare{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/campo-di-mare.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.foce-verde{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/foce-verde.jpg');
+	background-size: cover;
+	background-position: center;		
+}
+
+
+
+.massaciuccoli{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/massaciuccoli.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.calambrone{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/calambrone.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.talamone{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/talamone.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.vada{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/vada.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.quercianella{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/quercianella.jpg');
+	background-size: cover;
+	background-position: center;	
+}
+
+.le-gorette{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/le-gorette.jpeg');
+	background-size: cover;
+	background-position: center;	
+}
+
+
+/* Turkey */
+.marmaris{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/spot-images/marmaris.jpg');
+	background-size: cover;
+	background-position: center;		
+}
+
+
