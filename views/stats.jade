@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			div.col-md-12
+				h1 Statistic for #{ email }
+				p Total email received: #{ total_email }
+		div.row
+			div.col-md-12
+				div.table-resposive
+					table.table.table-striped
+						thead
+							tr
+								th User id
+								th Spedition id
+								th Event
+								th Timestamp
+						tbody
+							for event in events
+								tr
+									td #{ event.user_id }
+									td #{ event.spedition_id }
+									td #{ event.event }
+									td #{ event.date }

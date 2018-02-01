@@ -4,7 +4,6 @@ var Event = require('../models/Event.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	console.log("Qui")
 	Event
 	.aggregate([
 		{ $match: { event: 'delivered' } },
@@ -21,10 +20,27 @@ router.get('/', function(req, res, next) {
 			return res.status(400).send(err);
 		};
 
-		console.log(events);
-		res.render('index', { title: 'Express', events: events });
+		res.render('index', { title: 'Sendgrid Eventhooker', events: events });
 	})
 
+});
+
+router.get('/statistics/:email', function(req, res, next){
+	var email = req.params.email;
+
+	Event
+	.find({ email: email })
+	.exec(function(err, events){
+		if (err) {
+			return res.status(400).send(err);
+		};
+
+		events.forEach(function(event){
+			event.date = new Date(event.timestamp * 1000);
+		})
+
+		res.render('stats', { title: 'Stats: ' + email, email: email, events: events, total_email: req.query.total_email });
+	});
 });
 
 module.exports = router;
